@@ -1,0 +1,43 @@
+---
+layout: default
+---
+{% assign posts_count = paginator.posts | size %}
+
+<div class="home">
+  {% if posts_count > 0 %}
+    <div class="posts">
+      {% for post in paginator.posts %}
+        <div class="post py3">
+          {% if post.product-title == null %}<p class="post-meta">{{ post.date | date: site.date_format }}</p>{% endif %}
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h2 post-title">{{ post.title }}</h3></a>
+          {% if post.product-title %}
+          <div class="clearfix col">
+            <div class="col-half">
+              <div class="mb2"><img src="{{ site.url }}/images/{{ post.image-square}}"></div>
+            </div>
+            <div class="col-half">
+              <div class="mb2 center">
+                <p class="post-summary mb2">{{ post.excerpt }}</p>
+                <a href="{{ post.url | prepend: site.baseurl }}" class="button button-green mb2"> Detail Produk </a>
+              </div>
+            </div>
+          </div>
+          {% endif %}
+          {% if post.product-title == null %}
+          <span class="post-summary">
+            {% if post.summary %}
+              {{ post.summary }}
+            {% else %}
+              {{ post.excerpt }}
+            {% endif %}
+          </span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    {% include pagination.html %}
+  {% else %}
+    <h1 class="center"'>{{ site.text.index.coming_soon }}</h1>
+  {% endif %}
+</div>
