@@ -4,7 +4,7 @@ email:       mewlenashop@gmail.com
 author:      Mewlena
 description: "Custom case dengan berbagai macam design casing/cover sesuai keinginanmu."
 baseurl:     ""
-url:         "/"
+url:         ""
 date_format: "%b %-d, %Y"
 header_pages:
 - cara-order.md
