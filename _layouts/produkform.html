@@ -45,7 +45,7 @@ layout: default
       <div class="h2 blue mt1">{{ page.harga | thousands_separated:"." | append:',- ' | prepend:' Rp. '}}</div>
       <div class="blue small mb1">hemat {{ page.harga | times: 0.3 | round | thousands_separated:"." | append:',- ' | prepend:' Rp. ' }}</div>
       <div class="mb2 small">* Harga belum termasuk ongkir</div>
-      <a href="{{ site.url | append:'/order' }}{{ page.url }}" class="button button-orange mb2"><strong>&raquo; Pesan Sekarang &laquo;</strong></a>
+      <a href="{{ site.url }}/go/wa/" class="button button-orange mb2"><strong>&raquo; Pesan Sekarang &laquo;</strong></a>
       <p class="small">Untuk melakukan pemesanan manual WA melalui CS kami, <a href="#pesan-via-cs">klik disini</a></p>
     </div>
   </div>
@@ -86,7 +86,7 @@ layout: default
       <div class="h2 blue mt1">{{ page.harga | thousands_separated:"." | append:',- ' | prepend:' Rp. '}}</div>
       <div class="blue small mb1">hemat {{ page.harga | times: 0.3 | round | thousands_separated:"." | append:',- ' | prepend:' Rp. ' }}</div>
       <div class="mb2 small">* Harga belum termasuk ongkos kirim</div>
-      <a href="{{ site.url | append:'/order' }}{{ page.url }}" class="button button-orange mb2"><strong>&raquo; Pesan Sekarang &laquo;</strong></a>
+      <a href="{{ site.url }}/go/wa/" class="button button-orange mb2"><strong>&raquo; Pesan Sekarang &laquo;</strong></a>
     </div>
   </div>
 </div>
