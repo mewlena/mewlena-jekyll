@@ -1,4 +1,14 @@
 
+.pesan-wa {
+  border: 3px dashed $green;
+  padding: $space-1;
+}
+
+.harga {
+  padding: $space-1;
+  border: 3px double #f69521;
+}
+
 .col-half {
   float: left;
   width: 100%;
