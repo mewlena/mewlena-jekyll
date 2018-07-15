@@ -43,7 +43,8 @@ layout: default
 <div class="pesan-wa center mt2">UNTUK PEMESANAN TEKAN TOMBOL DIBAWAH</div>
 <div class="center mt3">👇 K L I K 👇</div>
 <div class="center mt2">
-  <a href="/go/wa/" class="button button-green mb2"><img src="/images/whatsapp-logo.png"> Pesan Lewat Whatsapp</a>        
+  {% capture params %}u={{ site.url | uri_escape }}{{ page.url | uri_escape }}&t={{ page.title | uri_escape }}{% endcapture %}
+    <a href="/go/wa/?{{ params }}" class="button button-green mb2"><img src="/images/whatsapp-logo.png"> Pesan Lewat Whatsapp</a>
 </div>
 
 <hr>
