@@ -9,9 +9,18 @@
   border: 3px double #f69521;
 }
 
+.mmin {
+  margin-right: -$space-2;
+}
+
 .col-half {
   float: left;
   width: 100%;
+}
+
+.col-per-2, .col-per-3, .col-per-4, .col-per-5 {
+  float: left;
+  width: 50%;
 }
 
 .float {
@@ -119,11 +128,42 @@
   .col-half {
     width: 50%;
   }
-  
+
+  .col-per-2 {
+    width: 50%
+  }
+
+  .col-per-3 {
+    width: 33%;
+  }
+
+  .col-per-4 {
+    width: 25%;
+  }
+
+  .col-per-5 {
+    width: 20%;
+  }  
+
   .col-half > div {
     margin-left: $space-3;
   }
-  
+
+  .col-per-2 > div {
+    margin-left: $space-3;
+  }
+
+  .col-per-3 > div {
+    margin-left: $space-3;
+  }
+
+  .col-per-4 > div {
+    margin-left: $space-3;
+  }
+
+  .col-per-5 > div {
+    margin-left: $space-3;
+  }  
   .float {
     width: 20em;
     left: $space-2;
