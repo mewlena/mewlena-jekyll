@@ -9,6 +9,10 @@
   border: 3px double #f69521;
 }
 
+.arti > h4 {
+  font-size: 12px;
+}
+
 .mmin {
   margin-right: -$space-2;
 }
@@ -21,6 +25,7 @@
 .col-per-2, .col-per-3, .col-per-4, .col-per-5 {
   float: left;
   width: 50%;
+  max-height: 209px;
 }
 
 .float {
